@@ -15,10 +15,19 @@ public class VTDeneme {
 		//Veritabani Baglanti classini Olusturuyoruz
 		
 try {
+// Veritabani Driverini Tanitiyoruz
 Class.forName("org.postgresql.Driver");
+
+//Connection Objesini Olusturuyoruz
 Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/obs","postgres","postgres");
+
+// Sorgu yazabilmek icin Statement objesi Yaratiyoruz
 	Statement st = conn.createStatement();	
+	
+// Sorgudan Dönenleri Resulset Objesinde Tutacagiz.
 	ResultSet rs = st.executeQuery("select no,ad,soyad from ogrenci order by no");
+	
+// Dönen Satirlari Yazdiralim.
 	while(rs.next())
 	{
 		no = rs.getInt("no");

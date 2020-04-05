@@ -19,7 +19,7 @@ try {
 Class.forName("org.postgresql.Driver");
 
 //Connection Objesini Olusturuyoruz
-Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/obs","postgres","postgres");
+Connection conn = DriverManager.getConnection("jdbc:postgresql://192.168.0.238:5432/obs","postgres","postgres");
 
 // Sorgu yazabilmek icin Statement objesi Yaratiyoruz
 	Statement st = conn.createStatement();	

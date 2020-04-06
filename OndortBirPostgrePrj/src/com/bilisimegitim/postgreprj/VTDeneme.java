@@ -11,7 +11,7 @@ public class VTDeneme {
 		String ad = null;
 		String soyad = null;
 		
-		
+		//Bu uygulamanin amaci veritabanindan veri cekmektir
 		//Veritabani Baglanti classini Olusturuyoruz
 		
 try {

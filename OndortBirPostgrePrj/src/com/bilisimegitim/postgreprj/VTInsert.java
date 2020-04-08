@@ -21,8 +21,8 @@ public class VTInsert {
 			Connection conn = DriverManager.getConnection("jdbc:postgresql://192.168.0.238:5432/obs","postgres","postgres");
 			Statement st = conn.createStatement();	
 			
-			no = 14 ;
-			ad = "Hamide";
+			no = 77 ;
+			ad = "Hamidde";
 			soyad ="Esen";
 			
 			sorgu ="insert into ogrenci(no,ad,soyad) values("+no+",'"+ad+"','"+soyad+"') ";
